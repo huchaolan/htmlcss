@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>显示相关</title>
+    <style>
+        .box {
+            width:600px;
+            height:150px;
+            background-color:rgb(58, 60, 196);
+        }
+        .box div {
+            width: 300px;
+            height: inherit;
+            background-color:rgb(56, 187, 204);
+        }
+        .box span {
+            font-size:16px;
+        }
+        .box1 {
+            display:block;
+        }
+        .box2 {
+            visibility:hidden;
+        }
+        .box2 ul {
+            visibility:visible;
+        }
+        .box3 {
+            overflow: hidden;
+        }
+        .box3 div {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div>
+            <span>display:</span>
+            <ul>
+                <li>所有的后代元素都隐藏</li>
+                <li>就好像元素不存在一样</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box box2">
+        <div>
+            <span>visibility</span>
+            <ul>
+                <li>可见部分变透明,元素占有的空间不变</li>
+                <li>将子元素visibility属性设置为visible,子元素可见</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box box3">
+        <div>
+            <span>overflow</span>
+            <ul>
+                <li>当内容元素溢出父元素展现形式</li>
+                <li>使用滚动条显示或者直接显示超出部分</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
