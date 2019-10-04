@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 雪碧图,竖着显示4个图片</title>
+    <style>
+        .bgbase {
+            border:1px solid red;
+            width: 30px;
+            height: 30px;
+            background-image: url(../imgs/share-bg.png);
+            /* display: inline-block; */
+            vertical-align: middle;
+            background-repeat: no-repeat;
+        }
+        .item-qq {
+            background-position: 0px 0px;
+        }
+        .item-zone {
+            background-position: -30px 0px;
+        }
+        .item-wechat {
+            background-position: -60px 0px;
+        }
+        .item-weibo {
+            background-position: -90px 0px;
+        }
+    </style>
+</head>
+<body>
+    <p>竖着显示4个图片</p>
+    <span>原图</span><img src="../imgs/share-bg.png"/>
+    <div class="container">
+        <div class="bgbase item-qq"></div>
+        <div class="bgbase item-zone"></div>
+        <div class="bgbase item-wechat"></div>
+        <div class="bgbase item-weibo"></div>
+        
+    </div>
+</body>
+</html>
