@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置简易导航</title>
+    <style>
+    /*
+    * 题目要求：
+    * 1、已知导航栏背景颜色为#333、边框圆角为10px。
+    * 2、导航选项内边距为20px、选项字体颜色为白色、 选项行高为40px。
+    * 3、当鼠标滑过时，item的背景颜色会变成蓝色“#188eee”
+    * 4、文字颜色为白色，无下划线，行高为“40px”
+    */
+    .link-list {
+        padding-left: 10px;
+        background-color: #333;
+        border-radius: 10px;
+    }
+
+    .link-list .link-item {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        padding: 20px;/*父元素没有设置高度，设置内边距可以撑开父元素的高度*/
+        color: white;
+        line-height: 40px;
+    }
+    .link-list .link-item:hover {
+        background-color: #188eee;
+    }
+</style>
+</head>
+<body>
+    <!--请在style.css中根据题目要求，完成本次习题-->
+    <div class="link-list">
+        <a class="link-item" href="#">首页</a>
+        <a class="link-item" href="#">技术</a>
+        <a class="link-item" href="#">杂谈</a>
+        <a class="link-item" href="#">关于</a>
+    </div>
+</body>
+</html>
