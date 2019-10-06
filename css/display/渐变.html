@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线性渐变</title>
+    <style>
+        .base {
+            width:260px;
+            height:100px;
+        }
+        .gradient-default {
+            background:linear-gradient(orange,yellow);
+        }
+        .gradient-urd {
+            background:linear-gradient(to right,orange,yellow);
+        }
+        .gradient-angle {
+            background:linear-gradient(135deg,orange,yellow);
+        }
+        .gradient-colors {
+            background: linear-gradient(to right,red,orange,yellow,white);
+        }
+        .gradient-opactity {
+            background: linear-gradient(to right,rgba(0,0,255,0),rgba(0,255,0,1));
+        }
+        .gradient-repeat {
+            background: repeating-linear-gradient(-45deg,blue,blue 5px,white 5px,white 10px);
+        }
+    </style>
+</head>
+<body>
+    <h1>线性渐变</h1>
+    <section>
+        <h2>从上到下的线性渐变</h2>
+        <pre>
+.gradient-default {
+    background:linear-gradient(orange,yellow);
+}
+        </pre>
+        <div class="base gradient-default"></div>
+    </section>
+    <section>
+        <h2>从左到右线性渐变</h2>
+        <pre>
+.gradient-urd {
+    background: linear-gradient(to rigth,orange,yellow);
+}
+        </pre>
+        <div class="base gradient-urd"></div>
+    </section>
+    <section>
+        <h2>使用角度的线性渐变</h2>
+        <pre>
+.gradient-angle {
+    background:linear-gradient(135deg,orange,yellow);
+}
+        </pre>
+        <div class="base gradient-angle"></div>
+    </section>
+    <section>
+        <h2>指定多个等间距的色标</h2>
+        <pre>
+.gradient-colors {
+    background: linear-gradient(to right,red,orange,yellow,white);
+}
+        </pre>
+        <div class="base gradient-colors"></div>
+    </section>
+    <section>
+        <h2>使用透明度</h2>
+        <pre>
+.gradient-opactity {
+    background: linear-gradient(to right,rgba(0,0,255,0),rgba(0,255,0,1));
+}
+        </pre>
+        <div class="base gradient-opactity"></div>
+    </section>
+    <section>
+        <h2>重复的线性渐变</h2>
+        <pre>
+.gradient-repeat {
+    background: repeating-linear-gradient(-45deg,blue,blue 5px,white 5px,white 10px);
+}
+        </pre>
+        <div class="base gradient-repeat"></div>
+    </section>
+</body>
+</html>
