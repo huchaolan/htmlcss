@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置卡片样式</title>
+    <style>
+   /*
+    * 题目要求：
+    * 1、需要设置卡片图片父元素内容超过时隐藏，上面圆角值为5px，底部外边距为5px
+    * 2、需要设置卡片标题文字行高为30px, 字体大小为16px，单行超过使用省略
+    */
+        .tour-item {
+            width:240px;
+            padding:5px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+        }
+        .tour-item .tour-img-wrap .tour-img{
+            width:240px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-bottom:5px;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+        .tour-item .item-tt {
+            font-size:16px;
+            line-height: 30px;
+            margin: 0;
+            font-weight: normal;
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <a class="tour-item" href="#">
+        <div class="tour-img-wrap">
+            <img class="tour-img" src="img-style.png" alt="美化图片样式">
+        </div>
+        <h3 class="item-tt" title="“华丽的冒险”之美国西部游&mdash;&mdash;day 4">“华丽的冒险”之美国西部游&mdash;&mdash;day 4</h3>
+    </a>
+</body>
+</html>
