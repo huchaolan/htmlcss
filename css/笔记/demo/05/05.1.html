@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基于ex单位的天然垂直居中对齐效果实例页面</title>
+    <style>
+        .icon-array {
+            display: inline-block;
+            width: 20px;
+            height: 1ex;
+            background: url(array.svg) no-repeat center/20px 20px;
+        }
+        .icon-va-array {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align:middle;
+            background: url(array.svg) no-repeat center/20px 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>英文字符</div>
+    <div>
+        testXXXXxxxx
+        <i class="icon-array"></i>
+    </div>
+    <div>
+        (vertical-align)testXXXXxxxx
+        <i class="icon-va-array"></i>
+    </div>
+    <div>中文字符</div>
+    <div>
+        赵子龙
+        <i class="icon-array"></i>
+    </div>
+
+</div>
+</body>
+</html>
